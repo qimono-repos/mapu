@@ -1,0 +1,133 @@
+/* Reset and base styles */
+* {
+   box-sizing: border-box;
+     margin: 0;
+       padding: 0;
+       }
+
+       html, body {
+         width: 100%;
+           height: 100%;
+             font-size: 16px; /* Base font size */
+  line-height: 1.5;
+  color: #fff;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Main container */
+.encabezado {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Video background layer */
+.capa-de-base {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.capa-de-base video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay layer */
+.capa-del-medio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(48, 57, 82, 0.85);
+  z-index: 2;
+}
+
+/* Content layer */
+
+.capa-de-primer-plano {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+z-index: 3;
+text-align: center;
+}
+
+/* Text styling */
+.capa-de-primer-plano h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Lobster', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.capa-de-primer-plano p {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.capa-de-primer-plano li {
+  text-align: left;
+  padding-left: .25rem;
+}
+
+/* Button styling */
+.boton {
+  background: #1DB954; /* Spotify's brand green color */
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  text-decoration: none;
+  border-radius: 25px; /* Fully rounded ends */
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase; /* Spotify-style uppercase text */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.boton:hover {
+  background: darkgreen;
+}
+
+/* Responsive adjustments */
+  @media (max-width: 768px) {
+  .capa-de-primer-plano h1 {
+  font-size: 2rem;
+}
+
+.capa-de-primer-plano p {
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.boton {
+  font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+      border-radius:20
+    }
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+  }
+}
