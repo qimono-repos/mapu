@@ -49,4 +49,3 @@ A continuación, se presenta un diccionario de términos técnicos comunes relac
 
 ---
 
-Este diccionario está diseñado para ser fácilmente copiado y editado en Google Docs. Puedes continuar agregando términos de HTML o expandirlo a otras tecnologías frontend como CSS o JavaScript. ¿Qué términos o secciones te gustaría añadir?
