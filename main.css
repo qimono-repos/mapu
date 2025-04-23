@@ -10,8 +10,8 @@ html, body {
   height: 100%;
   font-size: 16px; /* Base font size */
   line-height: 1.5;
-  color: red;
   overflow: hidden; /* Prevent scrolling */
+  color: white;
 }
 
 /* Main container */
@@ -19,6 +19,10 @@ html, body {
   position: relative;
   width: 100vw;
   height: 100vh;
+}
+
+nav ol li {
+  list-style-type: none;
 }
 
 /* Video background layer */
